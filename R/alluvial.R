@@ -15,8 +15,6 @@
 #' @param blocks logical, whether to use blocks to tie the flows together at each category, versus contiguous ribbons (also admits character value "bookends")
 #' @param ordering list of numeric vectors allowing to reorder the alluvia on each axis separately, see Examples
 #' @param axis_labels character, labels of the axes, defaults to variable names in the data
-#' @param label.font 
-#' @param axis.font
 #' @param cex,cex.axis numeric, scaling of fonts of category labels and axis labels respectively. See \code{\link{par}}.
 #'
 #' @return Invisibly a list with elements:
