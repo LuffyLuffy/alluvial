@@ -38,7 +38,9 @@ alluvial <- function( ..., freq,
                      ordering=NULL,
                      axis_labels=NULL,
                      cex=par("cex"),
-                     cex.axis=par("cex.axis"))
+                     cex.axis=par("cex.axis")),
+                     axis.font=2,
+                     lable.font=2
 {
   # Data and graphical parameters
   p <- data.frame( ..., freq=freq, col, alpha, border, hide, stringsAsFactors=FALSE)
@@ -167,13 +169,13 @@ alluvial <- function( ..., freq,
     }
     for(k in seq_along(ax))
     {
-      text( j, mean(ax[[k]]), labels=names(ax)[k], cex=cex)
+      text( j, mean(ax[[k]]), labels=names(ax)[k], cex=cex,font=label.font)
     }
   }           
   # X axis
   axis(1, at= rep(c(-cw, cw), ncol(d)) + rep(seq_along(d), each=2),
        line=0.5, col="white", col.ticks="black", labels=FALSE)
-  axis(1, at=seq_along(d), tick=FALSE, labels=axis_labels, cex.axis=cex.axis)
+  axis(1, at=seq_along(d), tick=FALSE, labels=axis_labels, cex.axis=cex.axis,font=axis.font)
   par(op)
   invisible(rval)
 }
