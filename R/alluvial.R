@@ -172,7 +172,7 @@ alluvial <- function( ..., freq,
   }           
   # X axis
   axis(1, at= rep(c(-cw, cw), ncol(d)) + rep(seq_along(d), each=2),
-       line=0.5, col="white", col.ticks="black", labels=FALSE)
+       line=0.5, col="white", col.ticks="white", labels=FALSE)
   axis(1, at=seq_along(d), tick=FALSE, labels=axis_labels, cex.axis=cex.axis,font=2)
   par(op)
   invisible(rval)
