@@ -40,7 +40,7 @@ alluvial <- function( ..., freq,
                      cex=par("cex"),
                      cex.axis=par("cex.axis"),
                      axis.font=2,
-                     lable.font=2)
+                     label.font=2)
 {
   # Data and graphical parameters
   p <- data.frame( ..., freq=freq, col, alpha, border, hide, stringsAsFactors=FALSE)
